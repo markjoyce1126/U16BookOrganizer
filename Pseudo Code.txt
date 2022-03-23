@@ -1,0 +1,21 @@
+BEGIN
+	WHILE user selection = null
+		SEND 'Open File' to DISPLAY
+	END WHILE
+	WHEN user selection = true
+		OPEN File Dialog
+	IF File is NOT CSV THEN
+		PRINT "The only file type accepted is .CSV."
+	ELSEIF File is not Reachable THEN
+		PRINT "The file you have selected is not reachable, either select a different file or move it to an accessible location."
+	ELSE
+		PRINT "The file you have selected for input is {filepath}."		
+END
+BEGIN
+	FOR Books in CSV FILE DO
+		IMPLEMENT cryptographic methods
+END
+BEGIN
+	OUTPUT File to JSON
+		PRINT "The operation has been completed successfully and your JSON file is located at {filepath}."
+END
